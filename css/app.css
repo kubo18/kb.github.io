@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei", "SimHei", "Arial", "Times New Roman";
+    font-size: 1.4rem;
+    background-color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/b.webp');
+    /*background-image: url('../images/b.webp');*/
+    /*background-image: url('https://img.alicdn.com/imgextra/i1/O1CN01rnyZmp1ZqGB1649m8_!!6000000003245-0-tps-750-1246.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* 根据视口调整高度 */
+}
+
+#warp {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.download {
+    position: relative;
+}
+
+.rule {
+    margin-top: 20px;
+}
+
+.wz>p {
+    color: #FFFFFF;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.wz>p span {
+    padding-right: 52px;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    background-position: right center;
+}
+
+.xiazai {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.xiazai_ios a {
+    display: block;
+    width: 312px;
+    height: 52px;
+    background: linear-gradient(91.32deg, #03E1FF 0%, #8F00FF 100%);
+    /*border: 1px solid rgba(255,255,255,.25);*/
+    box-shadow: 0 9px 23px #4200ff;
+    border-radius: 32px;
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 35px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    /* 去掉链接的下划线 */
+}
+
+.xiazai_az a {
+    display: block;
+    width: 312px;
+    height: 52px;
+    background: linear-gradient(91.32deg, #03E1FF 0%, #8F00FF 100%);
+    /*border: 1px solid rgba(255,255,255,.25);*/
+    box-shadow: 0 9px 23px #4200ff;
+    border-radius: 32px;
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 35px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    /* 去掉链接的下划线 */
+}
+
+.wtips {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.wtips img {
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.update-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    opacity: .4;
+    margin-top: 10px;
+    text-align: center;
+}
