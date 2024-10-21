@@ -1,0 +1,262 @@
+blockquote,
+body,
+button,
+caption,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+input,
+legend,
+li,
+menu,
+ol,
+p,
+pre,
+table,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #fff
+}
+
+abbr,
+body,
+fieldset,
+html,
+iframe,
+img {
+    border: 0
+}
+
+li {
+    list-style: none
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+input {
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a,
+button {
+    cursor: pointer
+}
+
+b,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-style: normal;
+    font-weight: 400
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+body,
+button,
+input,
+textarea {
+    color: #d4d4d4
+}
+
+body,
+html {
+    height: auto;
+    min-height: 930px;
+    width: 100%
+}
+
+::-webkit-input-placeholder {
+    color: #454545
+}
+
+:-moz-placeholder,
+::-moz-placeholder {
+    color: #454545
+}
+
+:-ms-input-placeholder {
+    color: #454545
+}
+
+.wbox {
+    clear: both;
+    margin: 0 auto;
+    width: 1200px
+}
+
+.wbox:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.wbox {
+    display: inline-block
+}
+
+* html .wbox {
+    zoom: 1
+}
+
+.wbox {
+    display: block;
+    position: relative
+}
+
+body {
+    width: 100%
+}
+
+a,
+button,
+div,
+input,
+select,
+textarea {
+    border: 0;
+    margin: 0;
+    outline: none;
+    padding: 0
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+
+.hide {
+    display: none
+}
+
+.license {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #222;
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0 auto;
+    max-width: 1600px;
+    min-width: 200px;
+    padding: 10px 20px 30px
+}
+
+.license h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0 0 10px
+}
+
+.license a:link,
+.license a:visited {
+    color: #24aafa
+}
+
+.license a:focus,
+.license a:hover {
+    background: #309bff;
+    border-radius: 6px;
+    color: #fff
+}
+
+.license a:active {
+    opacity: .95
+}
+
+.license .index .title {
+    font-weight: 700;
+    padding: 20px 0 10px
+}
+
+.license .blank {
+    height: 100px
+}
+
+.license-title {
+    padding: 10px 0 0;
+    text-align: center
+}
+
+.license-title p {
+    color: #666;
+    font-size: 12px
+}
+
+.license-cont p {
+    margin: 5px 0;
+    text-indent: 2em
+}
+
+.license-cont .t_Left {
+    margin: 0;
+    text-indent: 0
+}
+
+.license-cont .c_Strong {
+    color: #ff1b00
+}
+
+@media (orientation:landscape) {
+    .license {
+        padding: 10px 40px 30px
+    }
+}
+/*
+@media (prefers-color-scheme:dark) {
+
+    body,
+    html {
+        background: #1b1b20
+    }
+
+    .license {
+        color: #fff
+    }
+}*/
+
+.theme-dark {
+    background: #1b1b20
+}
+
+.theme-dark .license {
+    color: #fff
+}
