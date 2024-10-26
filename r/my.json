@@ -5,23 +5,8 @@
     {
       "name": "IPV6",
       "type": 0,
-      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
       "playerType": 1
-    },
-    {
-      "name": "多线ITV",
-      "type": 0,
-      "url": "https://mirror.ghproxy.com/raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",
-      "playerType": 1
-    },
-    {
-      "name": "我的私用",
-      "type": 0,
-      "url": "http://101.43.4.184:5678/tvbox/iptv.m3u",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-        "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
         "name": "LIVE",
@@ -30,19 +15,12 @@
         "playerType": 1,
         "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
         "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
-        "name": "IPV6",
-        "type": 0,
-        "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
-        "playerType": 1
     }
-   
   ],
   "sites": [
     {
       "key": "贱贱",
-      "name": "🌟蓝光专线·超清·无广告",
+      "name": "🌟蓝光·超清·无广告",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -55,7 +33,7 @@
 
     {
       "key": "比特",
-      "name": "🍄蓝光专线1·超清·无广告",
+      "name": "1️⃣蓝光·超清·无广告",
       "type": 3,
       "api": "csp_Bttwoo",
       "searchable": 1,
@@ -65,7 +43,7 @@
     },
     {
       "key": "文采",
-      "name": "蓝光专线2·超清·无广告",
+      "name": "2️⃣蓝光·超清·无广告",
       "type": 3,
       "api": "csp_Jpys",
       "playerType": 2,
@@ -76,7 +54,7 @@
     },
     {
       "key": "苹果",
-      "name": "🐶蓝光专线3·超清·无广告",
+      "name": "3️⃣蓝光·超清·无广告",
       "type": 3,
       "api": "csp_LiteApple",
       "searchable": 1,
@@ -86,7 +64,7 @@
     },
     {
       "key": "原创",
-      "name": "☀蓝光专线4·超清·无广告",
+      "name": "4️⃣蓝光·超清·无广告",
       "type": 3,
       "api": "csp_YCyz",
       "playerType": 1,
@@ -97,7 +75,7 @@
     },
     {
       "key": "欢视",
-      "name": "👓蓝光专线5·超清·无广告",
+      "name": "5️⃣蓝光·超清·无广告",
       "type": 3,
       "api": "csp_AppTT",
       "playerType": 2,
@@ -109,7 +87,7 @@
     },
     {
       "key": "可可",
-      "name": "👻蓝光专线6·超清·无广告",
+      "name": "6️⃣蓝光·超清·无广告",
       "type": 3,
       "api": "csp_Kekys",
       "playerType": 2,
@@ -120,7 +98,7 @@
     },
     {
       "key": "低端",
-      "name": "⏮️蓝光专线7·超清·无广告",
+      "name": "⏮️蓝光·超清·无广告",
       "type": 3,
       "api": "csp_Ddrk",
       "playerType": "2",
@@ -131,7 +109,7 @@
     },
     {
       "key": "Auete",
-      "name": "🏝蓝光专线8·超清·无广告",
+      "name": "🏝蓝光·超清·无广告",
       "type": 3,
       "api": "csp_Auete",
       "timeout": 15,
@@ -143,7 +121,7 @@
     },
     {
       "key": "新6V",
-      "name": "🧲蓝光专线9·超清·无广告",
+      "name": "🧲蓝光·超清·无广告",
       "type": 3,
       "api": "csp_SixV",
       "searchable": 1,
@@ -158,7 +136,7 @@
 
     {
       "key": "糯米",
-      "name": "🍓超清线路·极速·无广告",
+      "name": "🍓超清·极速·无广告",
       "type": 3,
       "api": "csp_Nmyswv",
       "searchable": 1,
@@ -168,7 +146,7 @@
     },
     {
       "key": "萌米",
-      "name": "👀超清线路1·极速·无广告",
+      "name": "1️⃣超清·极速·无广告",
       "type": 3,
       "api": "csp_AppTT",
       "playerType": 2,
@@ -180,7 +158,7 @@
     },
     {
       "key": "南瓜",
-      "name": "🎃超清线路2·极速·无广告",
+      "name": "2️⃣超清·极速·无广告",
       "type": 3,
       "api": "csp_NanGua",
       "playerType": 2,
@@ -191,7 +169,7 @@
     },
     {
       "key": "热播",
-      "name": "🌕超清线路3·极速·无广告",
+      "name": "3️⃣超清·极速·无广告",
       "type": 3,
       "api": "csp_AppTT",
       "playerType": 2,
@@ -201,6 +179,30 @@
       "ext": "AO7TcBkd8I/B5wQc4Qma+pU=",
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1729189985714/fan.txt;md5;ce37642e140a829d57496a32d8fcc648"
     },
+    {
+      "key": "小点",
+      "name": "4️⃣超清·极速·无广告",
+      "type": 3,
+      "api": "csp_Xdys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1715980119184/fan.txt;md5;f4a9956bae884c4a952da9152c0ed446"
+    },
+    {
+      "key": "Lib",
+      "name": "5️⃣超清·极速·无广告",
+      "type": 3,
+      "api": "csp_Libvio",
+      "timeout": 15,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "https://www.libvio.pw/",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1715980119184/fan.txt;md5;f4a9956bae884c4a952da9152c0ed446"
+    },
+    
     {
       "key": "短剧",
       "name": "🌈短剧专线",
@@ -249,37 +251,6 @@
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1729189985714/fan.txt;md5;ce37642e140a829d57496a32d8fcc648"
     },
 
-
-    
-
-
-    {
-      "key": "小点",
-      "name": "💥幽影┃多线",
-      "type": 3,
-      "api": "csp_Xdys",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1715980119184/fan.txt;md5;f4a9956bae884c4a952da9152c0ed446"
-    },
-   
-
-
-    {
-      "key": "Lib",
-      "name": "🌟月影┃不卡",
-      "type": 3,
-      "api": "csp_Libvio",
-      "timeout": 15,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "ext": "https://www.libvio.pw/",
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1715980119184/fan.txt;md5;f4a9956bae884c4a952da9152c0ed446"
-    },
-    
   
     {
       "key": "Sso",
@@ -376,21 +347,6 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "https://gitlab.com/fantaiying/ext/-/raw/main/bilibili.json",
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1715980119184/fan.txt;md5;f4a9956bae884c4a952da9152c0ed446"
-    },
-    {
-      "key": "Biliych",
-      "name": "🅱明星┃演唱会",
-      "type": 3,
-      "api": "csp_Bili",
-      "style": {
-        "type": "rect",
-        "ratio": 1.597
-      },
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": "https://gitlab.com/fantaiying/ext/-/raw/main/biliych.json",
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1715980119184/fan.txt;md5;f4a9956bae884c4a952da9152c0ed446"
     }
   ],
