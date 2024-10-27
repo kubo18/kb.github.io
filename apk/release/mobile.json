@@ -1,5 +1,5 @@
 {
-  "code": 1001027,
+  "code": 1001028,
   "name": "1.0.0",
-  "desc": "* v1.0.0 \n* 优化壁纸 \n* 优化观看设置 \n* 修复android14解析bug"
+  "desc": "* v1.0.0 \n* 修复Android14画中画Bug"
 }
