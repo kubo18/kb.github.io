@@ -127,6 +127,7 @@ function checkAppInstallation() {
     "https://apps.apple.com/cn/app/coolplayer-%E9%85%B7%E6%92%AD-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/id6630381534"; // App Store 链接
   var playStoreUrl = "https://zx.qiniu.youlun.online/apk/release/kb.apk"; // Android Play Store 链接
   var timeout = 500; // 延迟时间（毫秒）
+  var appOpened = false; // 标志位
   // 判断平台
   if (browser.versions.android) {
     // 创建一个不可见的 iframe
@@ -141,8 +142,8 @@ function checkAppInstallation() {
       document.body.removeChild(iframe);
       // 引导用户到 Play Store
       console.log("去下载android");
-      if (document.hasFocus()) {
-        window.location.href = playStoreUrl;
+      if (document.hasFocus() && document.hasFocus()) {
+        window.location.href = playStoreUrl; // 跳转 去 下载
       }
     }, timeout);
   } else {
@@ -154,9 +155,15 @@ function checkAppInstallation() {
 
     setTimeout(function () {
       document.body.removeChild(iframe);
-      if (document.hasFocus()) {
-        window.location.href = appStoreUrl;
+      if (!appOpened && document.hasFocus()) {
+        window.location.href = appStoreUrl; // 跳转到 App Store
       }
     }, timeout);
+
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") {
+        appOpened = true; // 页面隐藏，可能应用已打开
+      }
+    });
   }
 }
