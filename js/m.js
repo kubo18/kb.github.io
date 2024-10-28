@@ -122,7 +122,7 @@ $(document).ready(function () {
 });
 function checkAppInstallation() {
   var urlScheme = "um.66d7d952cac2a664dea1fb19"; //ios URL Scheme
-  var androidScheme = "um.66d7dd0e192e0574e7751a2e"; //android URL Scheme
+  var androidScheme = "kubo://splash"; //android URL Scheme
   var appStoreUrl =
     "https://apps.apple.com/cn/app/coolplayer-%E9%85%B7%E6%92%AD-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/id6630381534"; // App Store 链接
   var playStoreUrl = "https://zx.qiniu.youlun.online/apk/release/kb.apk"; // Android Play Store 链接
@@ -133,7 +133,7 @@ function checkAppInstallation() {
     // 创建一个不可见的 iframe
     var iframe = document.createElement("iframe");
     iframe.style.display = "none";
-    iframe.src = androidScheme + "://";
+    iframe.src = androidScheme;
     document.body.appendChild(iframe);
     console.log("去下载andr");
     // 使用 setTimeout 等待应用启动或者确认是否安装
