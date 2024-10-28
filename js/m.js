@@ -137,15 +137,16 @@ function checkAppInstallation() {
     document.body.appendChild(iframe);
     console.log("去下载andr");
     // 使用 setTimeout 等待应用启动或者确认是否安装
+    /*
     setTimeout(function () {
       // 移除 iframe
       document.body.removeChild(iframe);
       // 引导用户到 Play Store
       console.log("去下载android");
-      if (document.hasFocus() && document.hasFocus()) {
+      if (!appOpened && document.hasFocus()) {
         window.location.href = playStoreUrl; // 跳转 去 下载
       }
-    }, timeout);
+    }, timeout);*/
   } else {
     // 对于iOS设备
     var iframe = document.createElement("iframe");
