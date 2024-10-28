@@ -134,10 +134,9 @@ function checkAppInstallation() {
     var iframe = document.createElement("iframe");
     iframe.style.display = "none";
     iframe.src = androidScheme;
-    document.body.appendChild(iframe);
-    console.log("去下载andr");
+    document.body.appendChild(iframe); //TODO:无效
     // 使用 setTimeout 等待应用启动或者确认是否安装
-    /*
+    /**/
     setTimeout(function () {
       // 移除 iframe
       document.body.removeChild(iframe);
@@ -146,7 +145,7 @@ function checkAppInstallation() {
       if (!appOpened && document.hasFocus()) {
         window.location.href = playStoreUrl; // 跳转 去 下载
       }
-    }, timeout);*/
+    }, timeout);
   } else {
     // 对于iOS设备
     var iframe = document.createElement("iframe");
