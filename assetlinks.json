@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.cdrj.ky",
+        "sha256_cert_fingerprints": [
+          "F5:23:8F:33:A4:50:6E:5B:40:8C:E0:86:C2:BC:A6:F1:3C:09:0A:24:CF:A1:88:7F:B7:83:FC:8D:55:D1:6D:41"
+        ]
+      }
+    }
+  ]
+  
