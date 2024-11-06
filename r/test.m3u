@@ -1,0 +1,6 @@
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="测试",测试1
+https://us-xpc5-l2.xpccdn.com/f408e32a-0ffe-4af8-b61b-fd642cd6ee6e/b420f898-a167-4241-a151-e80ff009a86b.mp4
+#EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="测试",测试2
+https://us-xpc5-l2.xpccdn.com/cc9bdf31-a7d4-418d-a35b-a8f587cd71de/91a3b5e7-6e98-41e6-900d-7ed97c1024a6.mp4
+
