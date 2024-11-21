@@ -125,7 +125,9 @@ function checkAppInstallation() {
   var androidScheme = "kubo://splash"; //android URL Scheme
   var appStoreUrl =
     "https://apps.apple.com/cn/app/coolplayer-%E9%85%B7%E6%92%AD-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/id6630381534"; // App Store 链接
-  var playStoreUrl = "https://zx.qiniu.youlun.online/apk/release/kb.apk"; // Android Play Store 链接
+  //var playStoreUrl = "https://zx.qiniu.youlun.online/apk/release/kb.apk"; // Android Play Store 链接  https://ghproxy.com/
+  var playStoreUrl =
+    "https://ghproxy.com/https://raw.githubusercontent.com/kubo18/kb.github.io/refs/heads/main/apk/release/kb.apk";
   var timeout = 500; // 延迟时间（毫秒）
   var appOpened = false; // 标志位
   // 判断平台
