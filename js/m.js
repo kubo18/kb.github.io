@@ -129,6 +129,7 @@ function checkAppInstallation() {
   //var playStoreUrl = "https://ghproxy.com/https://raw.githubusercontent.com/kubo18/kb.github.io/refs/heads/main/apk/release/kb.apk";
   var playStoreUrl =
     "https://ghproxy.cc/https://raw.githubusercontent.com/kubo18/kb.github.io/refs/heads/main/apk/release/kb.apk";
+  //https://ghproxy.cc/https://raw.githubusercontent.com/kubo18/kb.github.io/refs/heads/main/images/b.webp
 
   var timeout = 500; // 延迟时间（毫秒）
   var appOpened = false; // 标志位

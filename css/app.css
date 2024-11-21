@@ -7,7 +7,8 @@ body {
     font-family: "Microsoft YaHei", "SimHei", "Arial", "Times New Roman";
     font-size: 1.4rem;
     background-color: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/b.webp');
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/b.webp');*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ghproxy.cc/https://raw.githubusercontent.com/kubo18/kb.github.io/refs/heads/main/images/b.webp');
     /*background-image: url('../images/b.webp');*/
     /*background-image: url('https://img.alicdn.com/imgextra/i1/O1CN01rnyZmp1ZqGB1649m8_!!6000000003245-0-tps-750-1246.jpg');*/
     background-size: cover;
