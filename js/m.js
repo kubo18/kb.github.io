@@ -122,7 +122,7 @@ $(document).ready(function () {
 });
 function checkAppInstallation() {
   var urlScheme = "um.66d7d952cac2a664dea1fb19"; //ios URL Scheme
-  var androidScheme = "kubo://splash"; //android URL Scheme
+  var androidScheme = "cdrjkb://"; //android URL Scheme
   var appStoreUrl =
     "https://apps.apple.com/cn/app/coolplayer-%E9%85%B7%E6%92%AD-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/id6630381534"; // App Store 链接
   //var playStoreUrl = "https://zx.qiniu.youlun.online/apk/release/kb.apk"; // Android Play Store 链接  https://ghproxy.com/
@@ -135,13 +135,33 @@ function checkAppInstallation() {
   var appOpened = false; // 标志位
   // 判断平台
   if (browser.versions.android) {
+    // 尝试打开应用
+    const startTime = Date.now();
+    let timeout = setTimeout(() => {
+      // 如果超时，跳转到下载页面
+      const elapsedTime = Date.now() - startTime;
+      if (elapsedTime < 2000) {
+        // 超时设为 2 秒
+        window.location.href = playStoreUrl;
+      }
+    }, 1500);
+
+    // 尝试打开应用
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
+    iframe.src = schemeUrl;
+    document.body.appendChild(iframe);
+
+    // 清理 iframe 和超时逻辑
+    window.onblur = () => clearTimeout(timeout);
+    setTimeout(() => document.body.removeChild(iframe), 2000);
+    /*
     // 创建一个不可见的 iframe
     var iframe = document.createElement("iframe");
     iframe.style.display = "none";
     iframe.src = androidScheme;
     document.body.appendChild(iframe); //TODO:无效
     // 使用 setTimeout 等待应用启动或者确认是否安装
-    /**/
     setTimeout(function () {
       // 移除 iframe
       document.body.removeChild(iframe);
@@ -150,7 +170,7 @@ function checkAppInstallation() {
       if (!appOpened && document.hasFocus()) {
         window.location.href = playStoreUrl; // 跳转 去 下载
       }
-    }, timeout);
+    }, timeout);*/
   } else {
     // 对于iOS设备
     var iframe = document.createElement("iframe");
