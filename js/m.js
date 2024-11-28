@@ -145,34 +145,17 @@ function checkAppInstallation() {
         window.location.href = playStoreUrl;
       }
     }, 1500);
-
     // 尝试打开应用
     const iframe = document.createElement("iframe");
     iframe.style.display = "none";
     iframe.src = androidScheme;
     document.body.appendChild(iframe);
-
     // 清理 iframe 和超时逻辑
     window.onblur = () => clearTimeout(timeout);
     setTimeout(() => document.body.removeChild(iframe), 2000);
-    /*
-    // 创建一个不可见的 iframe
-    var iframe = document.createElement("iframe");
-    iframe.style.display = "none";
-    iframe.src = androidScheme;
-    document.body.appendChild(iframe); //TODO:无效
-    // 使用 setTimeout 等待应用启动或者确认是否安装
-    setTimeout(function () {
-      // 移除 iframe
-      document.body.removeChild(iframe);
-      // 引导用户到 Play Store
-      console.log("去下载android");
-      if (!appOpened && document.hasFocus()) {
-        window.location.href = playStoreUrl; // 跳转 去 下载
-      }
-    }, timeout);*/
   } else {
     // 对于iOS设备
+    /*
     var iframe = document.createElement("iframe");
     iframe.style.display = "none";
     iframe.src = urlScheme + "://";
@@ -189,6 +172,24 @@ function checkAppInstallation() {
       if (document.visibilityState === "hidden") {
         appOpened = true; // 页面隐藏，可能应用已打开
       }
-    });
+    });*/
+    // iOS 逻辑
+    const startTime = Date.now();
+    let timeout = setTimeout(() => {
+      const elapsedTime = Date.now() - startTime;
+      if (elapsedTime < 2000) {
+        // 如果未进入应用，则跳转到 App Store
+        window.location.href = appStoreUrl;
+      }
+    }, 1500);
+
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
+    iframe.src = urlScheme + "://"; // 自定义 Scheme
+    document.body.appendChild(iframe);
+
+    // 清理逻辑
+    window.onblur = () => clearTimeout(timeout); // 页面失焦，可能成功跳转，取消超时
+    setTimeout(() => document.body.removeChild(iframe), 2000);
   }
 }
