@@ -68,7 +68,7 @@ $(document).ready(function () {
   });
   var t = getUrlParameter("t");
   $.ajax({
-    url: "https://qiniu.youlun.online/Hh/getCommandData", // 替换为你的服务器端点
+    url: "https://kb.chaodou.online/Hh/getCommandData", //url: "https://qiniu.youlun.online/Hh/getCommandData", // 替换为你的服务器端点
     method: "POST",
     data: { command: t, type: 2 },
     success: function (response) {
