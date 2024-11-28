@@ -149,7 +149,7 @@ function checkAppInstallation() {
     // 尝试打开应用
     const iframe = document.createElement("iframe");
     iframe.style.display = "none";
-    iframe.src = schemeUrl;
+    iframe.src = androidScheme;
     document.body.appendChild(iframe);
 
     // 清理 iframe 和超时逻辑
